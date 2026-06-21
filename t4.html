@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>函數篇　錯題回饋與弱點分析（全 125 題）</title>
+<title>主題四 空間幾何與線性代數　錯題回饋與弱點分析（全 125 題）</title>
 <script>window.MathJax={tex:{inlineMath:[['$','$']]},svg:{fontCache:'global'}};</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <style>
@@ -66,7 +66,7 @@ button{font-family:inherit;font-size:14px;border:0;border-radius:8px;padding:9px
 .exprow button{background:#1E3A5F;color:#fff;border:0;border-radius:7px;padding:9px 16px;cursor:pointer;font-size:13px;font-weight:bold}
 .exprow button:hover{background:#2a4f7f}
 </style></head><body>
-<header><h1>函數篇　錯題回饋與弱點分析</h1>
+<header><h1>主題四 空間幾何與線性代數　錯題回饋與弱點分析</h1>
 <p class="sub">四層練習體系　·　3 大章 11 節點 125 題　·　勾選做錯的題目，再按「產生弱點報告」</p></header>
 <div class="wrap">
  <div class="bar"><span>已勾錯 <b id="cnt">0</b> 題</span>
@@ -166,4 +166,124 @@ function genReport(){
 }
 build();
 if(window.MathJax){const go=()=>{if(MathJax.typesetPromise)MathJax.typesetPromise([document.getElementById('nodes')]);};if(MathJax.startup&&MathJax.startup.promise)MathJax.startup.promise.then(go);else setTimeout(go,800);}
-</script></body></html>
+</script><!--KH_INJECT_START-->
+<script>
+/* 課後練習題級整合（方案甲）：主講義抽題、課後練習在前、依章節分頁、生成器補強 */
+const KH = {"topic": "主題四 空間幾何與線性代數", "letter": "D", "pages": [{"name": "空間向量", "map": ["D1-1", "D1-2", "D1-3"], "tiers": {"基礎": [{"id": "KHD_0_1", "no": 1, "type": "單選題", "src": "北一女109", "stem": "A 在第一卦限，與 yz 平面、y 軸、z 軸的距離分別為 12、13、15，求 A 坐標。\n(1) $(12,9,5)$\n(2) $(12,5,9)$\n(3) $(12,13,15)$\n(4) $(5,12,9)$\n(5) $(9,12,5)$"}, {"id": "KHD_0_2", "no": 2, "type": "填充題", "src": "中女112", "stem": "$\\overrightarrow{a} = (2,3,4)、\\overrightarrow{b} = (1,2,3)、\\overrightarrow{\\text{AB}} = 2\\overrightarrow{a} - 3\\overrightarrow{b}$，A(5,4,3)，求 B 坐標。"}, {"id": "KHD_0_3", "no": 3, "type": "填充題", "src": "南一中113", "stem": "兩點 $A(4, - 1,3)、B( - 2,5,7)$，求 $\\overrightarrow{\\text{AB}}$ 在 yz 平面上的正射影。"}, {"id": "KHD_0_4", "no": 4, "type": "填充題", "src": "段考精選", "stem": "長方體 ABCD-EFGH，$AB = 2、AD = BC = 3、DH = 5$，求 $\\overrightarrow{\\text{AH}}\\ \\cdot \\ \\overrightarrow{\\text{AC}}$。"}, {"id": "KHD_0_5", "no": 5, "type": "填充題", "src": "段考精選", "stem": "設空間向量 $\\overrightarrow{u} = (2, - 1,2)$，求 $|\\overrightarrow{u}|$ 及與 $\\overrightarrow{u}$ 同向的單位向量。"}, {"id": "KHD_0_6", "no": 6, "type": "填充題", "src": "師附中112", "stem": "第一卦限點 P 到 x、y、z 軸的距離分別為 $3\\sqrt5、\\sqrt10、\\sqrt37$，求 P 坐標。"}, {"id": "KHD_0_7", "no": 7, "type": "單選題", "src": "建中109", "stem": "四點 $A(1,2,3)、B(4, - 1, - 3)、C( - 1,5,4)、D(2,2,1)$，E、F 分別在 $\\overline{\\text{AB}}$、$\\overline{\\text{CD}}$ 上，$AE:EB = 2:1、CF:FD = 1:2$，求 $\\overline{\\text{EF}}$。\n(1) $\\sqrt{6}$\n(2) $\\sqrt{17}$\n(3) $\\sqrt{22}$\n(4) $\\sqrt{29}$\n(5) $\\sqrt{41}$"}, {"id": "KHD_0_8", "no": 8, "type": "填充題", "src": "雄女109", "stem": "正立方體三頂點 $A(5,1,10)、B(1,5,6)、C(3,3,2)$，求此正立方體中心坐標。"}, {"id": "KHD_0_9", "no": 9, "type": "多選題", "src": "段考精選", "stem": "三點 $A(1,1,6)、B(2,1,3)、C(9,8,7)$，哪些點與 A,B,C 四點可形成平行四邊形？\n(1) $( - 6, - 6, - 2)$\n(2) $(10,8,4)$\n(3) $(8,8,10)$\n(4) $(9, - 6,7)$\n(5) $( - 6, - 5, - 2)$"}], "進階": [{"id": "KHD_0_10", "no": 10, "type": "單選題", "src": "108-全模四", "stem": "非零向量 $\\overrightarrow{\\text{OA}}、\\overrightarrow{\\text{OB}}、\\overrightarrow{\\text{OC}}$ 滿足 $\\overrightarrow{\\text{OA}} \\times \\overrightarrow{\\text{OB}} = \\overrightarrow{\\text{OC}}、\\overrightarrow{\\text{OB}} \\times \\overrightarrow{\\text{OC}} = \\overrightarrow{\\text{OA}}$，且 $\\overrightarrow{\\text{OC}} \\times \\overrightarrow{\\text{OA}}\\ \\parallel \\ \\overrightarrow{\\text{OB}}$。若 $|\\overrightarrow{\\text{OA}}| = 4$，三組向量張成的平行四邊形面積 $T_{1}、T_{2}、T_{3}$ 之和為？\n(1) 12\n(2) 16\n(3) 20\n(4) 24\n(5) 32"}, {"id": "KHD_0_11", "no": 11, "type": "填充題", "src": "108-全模四", "stem": "直線 AB 為 y 軸，AC：$\\frac{x}{1} = \\frac{y}{2} = \\frac{z}{2}$，BC：$\\frac{x}{2} = \\frac{y - 6}{1} = \\frac{z - a}{b}$，求 (a,b)。"}, {"id": "KHD_0_12", "no": 12, "type": "填充題", "src": "經典題", "stem": "邊長 1 的單位立方體中，$\\overline{AC'}$ 為體對角線。求 $\\overline{AC'}$ 與底面 ABCD 的夾角、以及與面對角線 $\\overline{\\text{AC}}$ 的夾角。"}, {"id": "KHD_0_13", "no": 13, "type": "填充題", "src": "經典題", "stem": "兩平面 $E_{1}:\\ 2x - y + 2z = 9$、$E_{2}:\\ x + 2y - 2z = 3$，求其銳角平分面方程式。"}, {"id": "KHD_0_14", "no": 14, "type": "填充題", "src": "成功112", "stem": "x,y,z 為實數，$x + y + 2z = 10$，求 ${(x + 1)}^{2} + {(y + 1)}^{2} + z^{2}$ 的最小值。"}, {"id": "KHD_0_15", "no": 15, "type": "多選題", "src": "南一中113", "stem": "三點 $(2, - 3,1)、( - 3,2,4)、(1, - 5,8)$，哪些點可與此三點構成平行四邊形？\n(1) $( - 2,4, - 3)$\n(2) $(0, - 6,13)$\n(3) $( - 4,0,11)$\n(4) $(2, - 4,3)$\n(5) $(6, - 10,5)$"}, {"id": "KHD_0_16", "no": 16, "type": "多選題", "src": "中女112", "stem": "正立方體一頂點 (0,0,0)、三鄰邊在三軸正向、邊長 2。任取表面兩正方形中心 P、Q，$\\overrightarrow{\\text{PQ}}$ 可能為？\n(1) $(2,0,0)$\n(2) $(1,1,1)$\n(3) $(1, - 1, - 1)$\n(4) $(1,0, - 1)$\n(5) $(0, - 2,0)$"}, {"id": "KHD_0_17", "no": 17, "type": "計算題", "src": "90-學測", "stem": "正四面體 ABCD 各面各邊中點連線，得四個小正四面體與一個正八面體。若 ABCD 體積為 12，求此正八面體體積。"}, {"id": "KHD_0_18", "no": 18, "type": "填充題", "src": "段考精選", "stem": "O 為原點、$P(2,3, - 4)、Q( - 2,1, - 9)$，求 $\\overline{\\text{PQ}}$ 長度及其在 y 軸上的正射影長。"}], "挑戰": [{"id": "KHD_0_19", "no": 19, "type": "填充題", "src": "經典題", "stem": "正四面體 ABCD 邊長 a。求相鄰兩面的二面角餘弦值 cosθ，以及正四面體的高 h（以 a 表示）。"}, {"id": "KHD_0_20", "no": 20, "type": "填充題", "src": "北一女109", "stem": "矩形紙片 OACB 沿對角線 $\\overline{\\text{AB}}$ 摺起，使 O 到第一卦限的 P。$O(0,0,0)、A(6\\sqrt3,0,0)、B(0,6\\sqrt2,0)$，若 $\\angle OBP = 60{^\\circ}$，求 P 坐標。"}, {"id": "KHD_0_21", "no": 21, "type": "填充題", "src": "武陵109", "stem": "線段 $\\overline{\\text{AB}}$ 在 xy 平面正射影長 5、在 xz 平面正射影長 4。若 $\\overline{\\text{AB}}$ 長度最大 M、最小 N，求 (M,N)。"}], "大考": [{"id": "KHD_0_22", "no": 22, "type": "單選題", "src": "86-學測", "stem": "P、Q 為平面 $ax + by + cz = 5$ 上相異兩點，$\\overrightarrow{\\text{PQ}} = (x₀,y₀,z₀)$，則 $\\overrightarrow{\\text{PQ}} \\cdot (a,b,c)$ 為\n(1) 不定值\n(2) 25\n(3) 5\n(4) 0\n(5) −1"}, {"id": "KHD_0_23", "no": 23, "type": "填充題", "src": "83-學測", "stem": "L 為 $x - y + z = 1$ 與 $x + y - z = 1$ 兩平面的交線，求 L 上與點 (1,2,3) 距離最近之點。"}, {"id": "KHD_0_24", "no": 24, "type": "多選題", "src": "92-學測", "stem": "$\\pi_{a}:\\ x - 4y + az = 10$、$E_{1}:\\ x - 2y + z = 5$、$E_{2}:\\ 2x - 5y + 4z = - 3$，選出正確敘述（平行/垂直/交點關係）。\n(1) 存在 a 使 $\\pi_{a}$ 與 $E_{1}$ 平行\n(2) 存在 a 使 $\\pi_{a}$ 與 $E_{1}$ 垂直\n(3) 存在 a 使三平面交於一點\n(4) 存在 a 使三平面交於一線\n(5) 存在 a 使三平面無公共點"}, {"id": "KHD_0_25", "no": 25, "type": "填充題", "src": "93-學測", "stem": "平面 $x - 2y + z = 0$ 上有以 P(1,1,1) 為圓心的圓 Γ，Q(−9,9,27) 在 Γ 上。過 Q 與 Γ 相切的直線之一方向向量為 (a,b,1)，求 (a,b)。"}, {"id": "KHD_0_26", "no": 26, "type": "選填題", "src": "107-學測", "stem": "長方形鐵片 $AB = 15、BC = 20$ 沿對角線 $\\overline{\\text{BD}}$ 對摺豎立，使平面 ABD ⊥ 平面 CBD，求空間中 $\\overline{\\text{AC}}$。"}, {"id": "KHD_0_27", "no": 27, "type": "單選題", "src": "111-分科甲", "stem": "O 為原點，P 在第一卦限且 $OP = 1$；OP 與 x 軸夾 45°、P 到 y 軸距 $\\frac{\\sqrt{6}}{3}$，求 P 的 z 坐標。\n(1) $\\frac{1}{2}$\n(2) $\\frac{\\sqrt{2}}{4}$\n(3) $\\frac{\\sqrt{3}}{3}$\n(4) $\\frac{\\sqrt{6}}{6}$\n(5) $\\frac{\\sqrt{3}}{6}$"}, {"id": "KHD_0_28", "no": 28, "type": "選填題", "src": "113-學測數A", "stem": "球心 O(0,0,0)、北極 N(0,0,2) 的地球儀，球面上 $A(\\sqrt3/2,\\ 1/2,\\ \\sqrt3)$，赤道上距 A 最遠點為 P。求過 A、P 的大圓上兩點的劣弧長（以 π 表示）。"}, {"id": "KHD_0_29", "no": 29, "type": "填充題", "src": "114-學測數A", "stem": "A(a,b,c)（a,b,c<0）與三平面 $4y + 3z = 2、3y + 4z = - 5、x + 2y + 2z = - 2$ 的距離都是 6，求 a+b+c。"}, {"id": "KHD_0_30", "no": 30, "type": "填充題", "src": "114-學測數A", "stem": "牆角 O 由兩牆面與地面兩兩垂直構成。三角形擋板 ABC 頂點在交界線上、與 O 距離 20、20、10，三邊與牆/地貼合，求 $tan\\angle CAB$。"}]}}, {"name": "矩陣", "map": ["D2-2", "D3-1", "D3-3", "D3-4"], "tiers": {"基礎": [{"id": "KHD_1_1", "no": 1, "type": "填充題", "src": "段考精選", "stem": "設 x,y 為實數，$\\begin{bmatrix} 3 & - 1 & 3 \\\\ 2 & 4 & - 1 \\\\ \\end{bmatrix}\\begin{bmatrix} x \\\\ y \\\\ 1 \\\\ \\end{bmatrix} = \\begin{bmatrix} 6 \\\\ - 6 \\\\ \\end{bmatrix}$，求 x+3y。"}, {"id": "KHD_1_2", "no": 2, "type": "填充題", "src": "段考精選", "stem": "$A = \\begin{bmatrix} 1 & 2 \\\\ 0 & 3 \\\\ \\end{bmatrix}$。若 $A^{4} = \\begin{bmatrix} a & b \\\\ c & d \\\\ \\end{bmatrix}$，求 a+b+c+d。"}, {"id": "KHD_1_3", "no": 3, "type": "單選題", "src": "段考精選", "stem": "$M = \\begin{bmatrix} - 1 & 0 \\\\ 1 & - 1 \\\\ \\end{bmatrix}$，求 $M^{5}$。\n(1) $\\begin{bmatrix} - 1 & 0 \\\\ - 5 & - 1 \\\\ \\end{bmatrix}$\n(2) $\\begin{bmatrix} - 1 & 0 \\\\ 5 & 1 \\\\ \\end{bmatrix}$\n(3) $\\begin{bmatrix} - 1 & 0 \\\\ - 5 & 1 \\\\ \\end{bmatrix}$\n(4) $\\begin{bmatrix} - 1 & 0 \\\\ - 5 & - 1 \\\\ \\end{bmatrix}$\n(5) $\\begin{bmatrix} - 1 & 0 \\\\ 5 & - 1 \\\\ \\end{bmatrix}$"}, {"id": "KHD_1_4", "no": 4, "type": "單選題", "src": "段考精選", "stem": "A 為 3×3 矩陣，對任意實數 a,b,c 恆有 $A\\begin{bmatrix} a \\\\ b \\\\ c \\\\ \\end{bmatrix} = \\begin{bmatrix} b \\\\ c \\\\ a \\\\ \\end{bmatrix}$。求 $A^{2}\\begin{bmatrix} 1 \\\\ 0 \\\\ - 1 \\\\ \\end{bmatrix}$。\n(1) $\\begin{bmatrix} 0 \\\\ 1 \\\\ 1 \\\\ \\end{bmatrix}$\n(2) $\\begin{bmatrix} - 1 \\\\ 1 \\\\ 0 \\\\ \\end{bmatrix}$\n(3) $\\begin{bmatrix} 1 \\\\ 0 \\\\ 1 \\\\ \\end{bmatrix}$\n(4) $\\begin{bmatrix} 0 \\\\ 1 \\\\ - 1 \\\\ \\end{bmatrix}$\n(5) $\\begin{bmatrix} - 1 \\\\ 0 \\\\ 1 \\\\ \\end{bmatrix}$"}, {"id": "KHD_1_5", "no": 5, "type": "填充題", "src": "段考精選", "stem": "坐標變換 $\\begin{bmatrix} y₁ \\\\ y₂ \\\\ \\end{bmatrix} = \\begin{bmatrix} 1 & 0 \\\\ - 1 & 2 \\\\ \\end{bmatrix}\\begin{bmatrix} x₁ \\\\ x₂ \\\\ \\end{bmatrix} + \\begin{bmatrix} - 2 \\\\ 3 \\\\ \\end{bmatrix}$（舊坐標→新坐標）。若舊坐標 $(r,s)$ 變換後得新坐標 $(1, - 2)$，求 (r,s)。"}, {"id": "KHD_1_6", "no": 6, "type": "填充題", "src": "段考精選", "stem": "$A = \\begin{bmatrix} 2 & 1 \\\\ 3 & 2 \\\\ \\end{bmatrix}$，求反方陣 $A^{- 1}$。"}, {"id": "KHD_1_7", "no": 7, "type": "填充題", "src": "段考精選", "stem": "求行列式 $\\begin{bmatrix} 2 & 1 & 3 \\\\ 0 & 3 & 1 \\\\ 0 & 0 & 5 \\\\ \\end{bmatrix}$ 之值。"}, {"id": "KHD_1_8", "no": 8, "type": "填充題", "src": "段考精選", "stem": "設 $A = \\begin{bmatrix} 2 & 1 \\\\ 1 & 3 \\\\ \\end{bmatrix}、B = \\begin{bmatrix} 1 & 0 \\\\ 2 & 1 \\\\ \\end{bmatrix}$，求乘積 AB。"}, {"id": "KHD_1_9", "no": 9, "type": "單選題", "src": "111-分科甲", "stem": "實數 c 使三元一次方程組 $x - y + z = 0、2x + cy + 3z = 1、3x - 3y + cz = 0$ 無解，求 c。\n(1) −3\n(2) −2\n(3) 0\n(4) 2\n(5) 3"}], "進階": [{"id": "KHD_1_10", "no": 10, "type": "填充題", "src": "112-模考六", "stem": "$A = \\begin{bmatrix} 3 & 4 \\\\ 2 & 5 \\\\ \\end{bmatrix}$，滿足 $A^{2} - 8A + 7I = O$。求 $A^{4} - 6A^{3} - 10A^{2} + 24A - 10I = \\alpha A + \\beta I$ 的 (α,β)。"}, {"id": "KHD_1_11", "no": 11, "type": "單選題", "src": "105-全模四", "stem": "$\\begin{bmatrix} 5 & 9 & 1 & 0 \\\\ 4 & 7 & 0 & 1 \\\\ \\end{bmatrix}$ 經列運算化為 $\\begin{bmatrix} 1 & 0 & a & b \\\\ 0 & 1 & c & d \\\\ \\end{bmatrix}$，求 $\\begin{bmatrix} a & b \\\\ c & d \\\\ \\end{bmatrix}$。\n(1) $\\begin{bmatrix} 7 & - 9 \\\\ - 4 & 5 \\\\ \\end{bmatrix}$\n(2) $\\begin{bmatrix} - 7 & - 9 \\\\ 4 & 5 \\\\ \\end{bmatrix}$\n(3) $\\begin{bmatrix} - 7 & 9 \\\\ 4 & - 5 \\\\ \\end{bmatrix}$\n(4) $\\begin{bmatrix} 7 & 9 \\\\ 4 & 5 \\\\ \\end{bmatrix}$\n(5) $\\begin{bmatrix} 5 & - 9 \\\\ - 4 & 7 \\\\ \\end{bmatrix}$"}, {"id": "KHD_1_12", "no": 12, "type": "單選題", "src": "104-指考甲", "stem": "直線 $L:3x - 2y = 1$，線性變換 $\\begin{bmatrix} 1 & 0 \\\\ a & - 8 \\\\ \\end{bmatrix}$ 把 L 映成斜率 2 的直線，求 a。\n(1) 8\n(2) 10\n(3) 12\n(4) −14\n(5) 14"}, {"id": "KHD_1_13", "no": 13, "type": "多選題", "src": "107-全模四", "stem": "方程組 $x + y + 2z = 5、3x - y = a、2x + by + z = a$，選出正確選項。\n(1) $a = 0,b = - 1$ ⟹ 恰一組解\n(2) $a = - 1,b = 2$ ⟹ 無限多組解\n(3) $a = 1,b = 0$ ⟹ 無解\n(4) $a = 5$ ⟹ 有解\n(5) 若無解則 $b = 1$"}, {"id": "KHD_1_14", "no": 14, "type": "多選題", "src": "105-全模四", "stem": "下列哪些方程組無解？\n(1) $2x + 3y = 1、\\frac{1}{2}x + \\frac{1}{3}y = 1$\n(2) $\\frac{x - 1}{3} = \\frac{y - 2}{4}$、$\\frac{x - 2}{4} = \\frac{y - 1}{2}$\n(3) $x + 2y + z = 4、8x + y - 2z = - 3、6x - 3y - 4z = 5$\n(4) $x - 3y - 2z = 0、2x + y + 2z = 1、4x + y + 3z = 3$\n(5) $\\frac{x + 4}{2} = \\frac{y}{- 2} = \\frac{z - 3}{- 3}$、$\\frac{x - 5}{- 2} = \\frac{y}{- 1} = \\frac{z + 1}{6}$"}, {"id": "KHD_1_15", "no": 15, "type": "多選題", "src": "105-全模四", "stem": "方程組 $x + y + az = 1、x + 2y + bz = - 1、2x + 3y - z = c$，選出正確敘述。\n(1) 若有解，則必為唯一解或無窮多解\n(2) 若有唯一解，則 $a + b \\neq - 1$\n(3) 若有解，則 $c = 0$\n(4) 若無解，則 $c \\neq 0$\n(5) 若無解，則 $a + b = - 1$"}, {"id": "KHD_1_16", "no": 16, "type": "多選題", "src": "南女113", "stem": "$\\overrightarrow{a} = (0,1, - 1)、\\overrightarrow{b} = ( - 1,1,0)、\\overrightarrow{c} = (k - 1,k², - 1)$。若任意向量都可表為三者的線性組合，求可能的 k。\n(1) −3\n(2) −2\n(3) −1\n(4) 0\n(5) 1"}, {"id": "KHD_1_17", "no": 17, "type": "多選題", "src": "89-學測", "stem": "行列式 $\\begin{bmatrix} x & 1 & 2 \\\\ 1 & x & 2 \\\\ 1 & 2 & x \\\\ \\end{bmatrix}$ 展開得多項式 f(x)，下列敘述哪些為真？\n(1) f(x) 是三次多項式\n(2) $f(1) = 0$\n(3) $f(2) = 0$\n(4) $(x - 1)$ 是 f(x) 的因式\n(5) $f(x) = 0$ 有三相異實根"}, {"id": "KHD_1_18", "no": 18, "type": "填充題", "src": "101-指考甲", "stem": "方程組 $ax + 3y + 5z = b、y + cz = 0、2y + dz = e$ 的解的圖形是坐標空間中「包含 x 軸」的一個平面，求 a、b、c。"}], "挑戰": [{"id": "KHD_1_19", "no": 19, "type": "填充題", "src": "108-模考六", "stem": "A 為轉移矩陣（各行元素和為 1），$A^{2} = \\begin{bmatrix} a & b \\\\ c & d \\\\ \\end{bmatrix}$，求 a,b,c,d 的算術平均。"}, {"id": "KHD_1_20", "no": 20, "type": "多選題", "src": "南女113", "stem": "方程組 $x + y - z = 2、2x - y + az = b、4x + y + cz = 5$，下列何者正確？\n(1) 若有解，則 $a - c - 2 \\neq 0$\n(2) 若 $a \\neq - 2\\ 且\\ c \\neq - 4$，則必恰一組解\n(3) 若 $a = - 2\\ 且\\ c = - 4$，則有可能無限多組解\n(4) 若有解，則 $b = 1$\n(5) 若 $b = 1$，則必有解"}, {"id": "KHD_1_21", "no": 21, "type": "填充題", "src": "南女113", "stem": "$a_{1},\\ldots,a_{8}$ 成等差，k 為實數。若方程組 $a_{1}x + 2a_{2}y - a_{3}z = k + 4$、$a_{3}x + 2a_{4}y - a_{5}z = - k - 12$、$a_{6}x + 2a_{7}y - a_{8}z = k + 9$ 有解，求 k。"}], "大考": [{"id": "KHD_1_22", "no": 22, "type": "填充題", "src": "107-學測", "stem": "$\\begin{bmatrix} a & b \\\\ c & d \\\\ 1 & 2 \\\\ \\end{bmatrix}\\begin{bmatrix} - 3 & 5 & 7 \\\\ - 4 & 6 & e \\\\ \\end{bmatrix} = \\begin{bmatrix} 3 & x & 7 \\\\ 0 & y & 7 \\\\ - 11 & z & 23 \\\\ \\end{bmatrix}$，求 y。"}, {"id": "KHD_1_23", "no": 23, "type": "填充題", "src": "112-學測數A", "stem": "果汁 j、奶茶 m、咖啡 k 的售價滿足 $60j + 80m + 50k = 12900$、$30j + 40m + 30k = 6850$、$50j + 70m + 40k = 10800$，求咖啡每杯售價 k。"}, {"id": "KHD_1_24", "no": 24, "type": "填充題", "src": "114-分科數甲", "stem": "A=逆時針旋轉 θ 的旋轉矩陣，B=對 x 軸鏡射矩陣，$A = \\begin{bmatrix} a₁ & a₂ \\\\ a₃ & a₄ \\\\ \\end{bmatrix}、BA = \\begin{bmatrix} c₁ & c₂ \\\\ c₃ & c₄ \\\\ \\end{bmatrix}$。已知 $a₁ + a₂ + a₃ + a₄ = 2(c₁ + c₂ + c₃ + c₄)$，求 tanθ。"}, {"id": "KHD_1_25", "no": 25, "type": "填充題", "src": "111-學測數A", "stem": "實數 a,b 使方程組 $ax + 5y + 12z = 4$、$x + ay + \\frac{8}{3}z = 7$、$3x + 8y + az = 1$ 有無窮多解，求 a 與對應的比例常數 b。"}, {"id": "KHD_1_26", "no": 26, "type": "填充題", "src": "99-學測", "stem": "設實數 a>0。若 x,y 的方程組 $2x - y = 1、x - 2y = a、x - ay = 122$ 有解，求 a。"}, {"id": "KHD_1_27", "no": 27, "type": "填充題", "src": "113-學測數A", "stem": "某銷售站賣甲、乙、丙三型手機，利潤分別 100、400、240 元。上年度三型各賣 A、B、C 支，平均每支利潤 260 元；甲乙兩型平均每支利潤 280 元。求 A:B:C。"}, {"id": "KHD_1_28", "no": 28, "type": "填充題", "src": "113-學測", "stem": "$\\begin{bmatrix} 1 & - 1 \\\\ 3 & - 2 \\\\ \\end{bmatrix}\\begin{bmatrix} a \\\\ b \\\\ \\end{bmatrix} = \\begin{bmatrix} 1 \\\\ 0 \\\\ \\end{bmatrix}$。若 $\\begin{bmatrix} 1 & - 1 \\\\ 3 & - 2 \\\\ \\end{bmatrix}\\begin{bmatrix} 2a + 1 \\\\ 2b + 1 \\\\ \\end{bmatrix} = \\begin{bmatrix} c \\\\ d \\\\ \\end{bmatrix}$，求 c−3d。"}, {"id": "KHD_1_29", "no": 29, "type": "填充題", "src": "111-學測數B", "stem": "$A = \\begin{bmatrix} 1 & 1 \\\\ 1 & - 1 \\\\ \\end{bmatrix}$。若 $A^{7} - 3A = \\begin{bmatrix} a & b \\\\ c & d \\\\ \\end{bmatrix}$，求 a+b+c+d。"}, {"id": "KHD_1_30", "no": 30, "type": "多選題", "src": "96-學測", "stem": "下列哪些矩陣經一系列列運算後可化成 $\\begin{bmatrix} 1 & 2 & 3 & 7 \\\\ 0 & 1 & 1 & 2 \\\\ 0 & 0 & 1 & 1 \\\\ \\end{bmatrix}$？\n(1) $\\begin{bmatrix} 1 & 2 & 3 & 7 \\\\ 0 & 1 & 1 & 2 \\\\ 0 & 2 & 3 & 5 \\\\ \\end{bmatrix}$\n(2) $\\begin{bmatrix} - 1 & 3 & - 1 & 0 \\\\ - 1 & 1 & 1 & 0 \\\\ 3 & 1 & - 7 & 0 \\\\ \\end{bmatrix}$\n(3) $\\begin{bmatrix} 1 & 1 & 2 & 5 \\\\ 1 & - 1 & 1 & 2 \\\\ 1 & 1 & 2 & 5 \\\\ \\end{bmatrix}$\n(4) $\\begin{bmatrix} 2 & 1 & 3 & 6 \\\\ - 1 & 1 & 1 & 0 \\\\ - 2 & 2 & 2 & 1 \\\\ \\end{bmatrix}$\n(5) $\\begin{bmatrix} 1 & 3 & 2 & 7 \\\\ 0 & 1 & 1 & 2 \\\\ 0 & 1 & 0 & 1 \\\\ \\end{bmatrix}$"}]}}]};
+(function(){
+  if (window.__KH_BUILT) return; window.__KH_BUILT = true;
+  const TC = {'基礎':'#1565c0','進階':'#2e7d32','挑戰':'#e65100','大考':'#c2185b'};
+  const TORD = ['基礎','進階','挑戰','大考'];
+  function pageCount(p){ return TORD.reduce((s,T)=>s+((p.tiers[T]||[]).length),0); }
+
+  function buildKH(){
+    const nodes = document.getElementById('nodes');
+    if(!nodes) return;
+    const area = document.createElement('div'); area.id='khArea';
+    let h = '<div class="sectionhead sec-blue">📘 課後練習（主講義 · 依章節分頁）'
+          + '<span style="font-size:12px;font-weight:normal">　勾選做錯的題，會與下方練習本一起納入弱點報告</span></div>';
+    KH.pages.forEach((p,pi)=>{
+      const mp = (p.map&&p.map.length) ? ('補強節點：'+p.map.join('、'))
+                                       : '（此章節無生成器 → 回看講義單元）';
+      h += '<div class="node n-blue"><h2>分頁 '+(pi+1)+'　'+esc(p.name)+'</h2>'
+         + '<div class="meta">課後練習 · 共 '+pageCount(p)+' 題 · '+mp+'</div>';
+      TORD.forEach(T=>{
+        const arr = p.tiers[T]||[]; if(!arr.length) return;
+        h += '<div class="layer"><h3>'+T+'</h3>';
+        arr.forEach((q,i)=>{
+          const src = q.src ? '<span class="src">〔'+esc(q.src)+'〕</span> ' : '';
+          h += '<div class="q"><input type="checkbox" class="kh" id="'+q.id+'" data-page="'+pi
+             + '" data-tier="'+T+'" onchange="upd()"><label for="'+q.id+'">'
+             + '<span class="tag" style="background:'+TC[T]+'">'+T+(i+1)+'</span>'
+             + '<span style="color:#999;font-size:11px">◎'+esc(q.type)+'</span> '+src+disp(q.stem)+'</label></div>';
+        });
+        h += '</div>';
+      });
+      h += '</div>';
+    });
+    area.innerHTML = h;
+    nodes.parentNode.insertBefore(area, nodes);   /* 課後練習在練習本(#nodes)之前 */
+    if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([area]);
+  }
+
+  /* 課後練習補強：全域 POOL+shuffle，渲染到 simkh-<code>（與練習本 sim-<code> 分開）*/
+  window.drawKH = function(code,n){
+    const box = document.getElementById('simkh-'+code); if(!box) return;
+    const arr = (POOL[code]||[]).slice();
+    if(!arr.length){ box.innerHTML='<div class="simhdr">此節點暫無生成器題庫。</div>'; return; }
+    shuffle(arr); const pick = arr.slice(0, Math.min(n,arr.length));
+    let h = '<div class="simhdr">補強練習 · 隨機 '+pick.length+' 題（參數化生成器，每次重抽不同）</div>';
+    pick.forEach((q,i)=>{
+      h += '<div class="simq"><div class="simstem"><b>'+(i+1)+'.</b> 〔'+esc(q.type)+'〕 '+disp(q.stem)+'</div>'
+         + '<button class="ansbtn" onclick="this.nextElementSibling.classList.toggle(\'show\')">看答案／詳解</button>'
+         + '<div class="simans">答：'+disp(q.answer)+'<br><span class="sol">詳解：'+disp(q.solution)+'</span></div></div>';
+    });
+    box.innerHTML = h; if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([box]);
+  };
+
+  function khReportHTML(){
+    const wrong = new Set([].slice.call(document.querySelectorAll('input.kh:checked')).map(c=>c.id));
+    let h = '<div class="sec" style="border-top:6px solid var(--blue);background:#f3f8ff">'
+          + '<h3 style="color:var(--blue)">📘 課後練習弱點（主講義 · 依章節分頁）</h3>';
+    if (wrong.size === 0){
+      h += '<div class="empty">課後練習這次全部答對 👍（或尚未勾選課後練習題）</div></div>';
+      return h;
+    }
+    KH.pages.forEach((p,pi)=>{
+      const tot = pageCount(p); if(!tot) return;
+      let pw=0; const parts=[];
+      TORD.forEach(T=>{ const arr=p.tiers[T]||[]; if(!arr.length) return;
+        const w=arr.filter(q=>wrong.has(q.id)).length; pw+=w; parts.push(T+' '+w+'/'+arr.length); });
+      const pct = Math.round(pw/tot*100);
+      const col = pct>=50?'var(--red)':pct>=30?'var(--yel)':'var(--grn)';
+      h += '<div class="path" style="background:#eef4ff"><b><span class="dot" style="background:'+col+'"></span>分頁 '
+         + (pi+1)+'：'+esc(p.name)+'</b>（錯 '+pw+'/'+tot+'，'+pct+'%）'
+         + '<br><span style="font-size:12px;color:#557">'+parts.join('　·　')+'</span>';
+      if (pw>0){
+        const codes = (p.map||[]).filter(c=>POOL[c]&&POOL[c].length);
+        if (codes.length){
+          h += '<br>'+codes.map(c=>'<button class="btn-sim" onclick="drawKH(\''+c+'\',3)">🔁 補強練習：'
+             + c+' 抽 3 題（可重抽）</button><div class="simbox" id="simkh-'+c+'"></div>').join(' ');
+        } else {
+          h += '<br><span style="font-size:13px;color:#7a3a00">↩️ 此章節無生成器，請回看講義單元：<b>'+esc(p.name)+'</b></span>';
+        }
+      }
+      h += '</div>';
+    });
+    h += '</div>';
+    return h;
+  }
+
+  /* 包裝 genReport：課後練習弱點插到報告最前面（afterbegin）*/
+  const origGen = genReport;
+  genReport = function(){
+    origGen();
+    const r = document.getElementById('report');
+    if (r){ r.insertAdjacentHTML('afterbegin', khReportHTML());
+      if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([r]); }
+  };
+
+  /* 包裝 exportReport：課後練習弱點文字也排在前面 */
+  const origExp = exportReport;
+  exportReport = function(){
+    origExp();
+    const ta = document.getElementById('exptxt'); if(!ta) return;
+    const wrong = new Set([].slice.call(document.querySelectorAll('input.kh:checked')).map(c=>c.id));
+    let kt = '【課後練習弱點 · 依章節分頁】\n';
+    if (wrong.size === 0){ kt += '（課後練習全部答對）\n'; }
+    else KH.pages.forEach((p,pi)=>{
+      const tot = pageCount(p); if(!tot) return;
+      let pw=0; TORD.forEach(T=>{ (p.tiers[T]||[]).forEach(q=>{ if(wrong.has(q.id)) pw++; }); });
+      if (pw>0) kt += '・分頁'+(pi+1)+' '+p.name+'：錯 '+pw+'/'+tot
+                    + (p.map&&p.map.length? '（可練 '+p.map.join('、')+'）':'（回看講義）')+'\n';
+    });
+    kt += '\n';
+    if (ta.value.indexOf('需加強節點') >= 0) ta.value = ta.value.replace('需加強節點', kt+'需加強節點');
+    else ta.value = kt + ta.value;
+  };
+
+  buildKH();
+})();
+</script>
+<!--KH_INJECT_END-->
+</body></html>
