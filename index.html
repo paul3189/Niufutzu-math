@@ -14,7 +14,24 @@ a.card:hover{border-color:#1E3A5F;box-shadow:0 4px 14px rgba(30,58,95,.12);trans
 a.card .no{width:40px;height:40px;border-radius:10px;background:#1E3A5F;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px}
 a.card .t b{font-size:17px;color:#1E3A5F}a.card .t span{font-size:13px;color:#64748b}
 footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:20px}
-</style></head><body><div class="wrap">
+</style><!--NFZ_GATE-->
+<style id="gateHide">body{visibility:hidden}</style>
+<script>
+(function(){var CODE=270763561,KEY="nfz_gate_ok";
+function h(s){var x=5381;for(var i=0;i<s.length;i++)x=((x<<5)+x+s.charCodeAt(i))>>>0;return x;}
+function reveal(){var s=document.getElementById('gateHide');if(s&&s.parentNode)s.parentNode.removeChild(s);}
+function build(){var ov=document.createElement('div');ov.id='nfzgate';
+ov.style.cssText="position:fixed;inset:0;z-index:2147483647;visibility:visible;background:linear-gradient(135deg,#2e7d32,#1E3A5F);display:flex;align-items:center;justify-content:center;font-family:'Microsoft JhengHei','PingFang TC',sans-serif";
+ov.innerHTML='<div style="background:#fff;border-radius:16px;padding:30px 26px;max-width:340px;width:88%;box-shadow:0 12px 40px rgba(0,0,0,.3);text-align:center"><div style="font-size:34px">&#128274;</div><h2 style="margin:8px 0 4px;color:#1E3A5F;font-size:20px">&#29275;&#22827;&#23376;&#25976;&#23416; &#183; &#32244;&#32722;&#21312;</h2><p style="color:#777;font-size:13px;margin:0 0 16px">&#35531;&#36664;&#20837;&#36890;&#38364;&#23494;&#30908;</p><input id="nfzpw" type="password" placeholder="&#36890;&#38364;&#23494;&#30908;" style="width:100%;box-sizing:border-box;padding:11px 12px;font-size:16px;border:1px solid #cbd5e1;border-radius:9px;text-align:center"><div id="nfzerr" style="color:#d32f2f;font-size:13px;height:18px;margin:6px 0"></div><button id="nfzbtn" style="width:100%;padding:11px;font-size:16px;font-weight:bold;color:#fff;background:#2e7d32;border:0;border-radius:9px;cursor:pointer">&#36914;&#20837;</button></div>';
+document.body.appendChild(ov);
+var inp=document.getElementById('nfzpw'),btn=document.getElementById('nfzbtn'),err=document.getElementById('nfzerr');
+function go(){if(h(inp.value||'')===CODE){try{localStorage.setItem(KEY,'1')}catch(e){}if(ov.parentNode)ov.parentNode.removeChild(ov);reveal();}else{err.textContent='密碼錯誤，請再試一次';inp.value='';inp.focus();}}
+btn.onclick=go;inp.addEventListener('keydown',function(e){if(e.key==='Enter')go();});inp.focus();}
+function start(){var ok=false;try{ok=localStorage.getItem(KEY)==='1'}catch(e){}if(ok){reveal();return;}build();}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();})();
+</script>
+<!--/NFZ_GATE-->
+</head><body><div class="wrap">
 <header><h1>🐂 牛夫子數學教室 ・ 錯題練習區</h1><p>勾出錯題 → 看弱點報告 → 抽生成器類似題練到熟 → 匯出弱點報告傳給老師</p></header>
 <div class="steps"><b>怎麼用？</b><ol>
 <li>點下面任一主題，把這次<b>做錯的題目打勾</b>。</li>

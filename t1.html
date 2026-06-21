@@ -80,7 +80,24 @@ button{font-family:inherit;font-size:14px;border:0;border-radius:8px;padding:9px
 .q .qt{color:#999;font-size:11px;margin-right:4px}
 .btn-drill{background:#1E3A5F;color:#fff;border:0;border-radius:8px;padding:10px 16px;font-size:14px;font-weight:bold;cursor:pointer;margin-top:4px}
 .btn-drill:hover{background:#2a4f7f}
-</style></head><body>
+</style><!--NFZ_GATE-->
+<style id="gateHide">body{visibility:hidden}</style>
+<script>
+(function(){var CODE=270763561,KEY="nfz_gate_ok";
+function h(s){var x=5381;for(var i=0;i<s.length;i++)x=((x<<5)+x+s.charCodeAt(i))>>>0;return x;}
+function reveal(){var s=document.getElementById('gateHide');if(s&&s.parentNode)s.parentNode.removeChild(s);}
+function build(){var ov=document.createElement('div');ov.id='nfzgate';
+ov.style.cssText="position:fixed;inset:0;z-index:2147483647;visibility:visible;background:linear-gradient(135deg,#2e7d32,#1E3A5F);display:flex;align-items:center;justify-content:center;font-family:'Microsoft JhengHei','PingFang TC',sans-serif";
+ov.innerHTML='<div style="background:#fff;border-radius:16px;padding:30px 26px;max-width:340px;width:88%;box-shadow:0 12px 40px rgba(0,0,0,.3);text-align:center"><div style="font-size:34px">&#128274;</div><h2 style="margin:8px 0 4px;color:#1E3A5F;font-size:20px">&#29275;&#22827;&#23376;&#25976;&#23416; &#183; &#32244;&#32722;&#21312;</h2><p style="color:#777;font-size:13px;margin:0 0 16px">&#35531;&#36664;&#20837;&#36890;&#38364;&#23494;&#30908;</p><input id="nfzpw" type="password" placeholder="&#36890;&#38364;&#23494;&#30908;" style="width:100%;box-sizing:border-box;padding:11px 12px;font-size:16px;border:1px solid #cbd5e1;border-radius:9px;text-align:center"><div id="nfzerr" style="color:#d32f2f;font-size:13px;height:18px;margin:6px 0"></div><button id="nfzbtn" style="width:100%;padding:11px;font-size:16px;font-weight:bold;color:#fff;background:#2e7d32;border:0;border-radius:9px;cursor:pointer">&#36914;&#20837;</button></div>';
+document.body.appendChild(ov);
+var inp=document.getElementById('nfzpw'),btn=document.getElementById('nfzbtn'),err=document.getElementById('nfzerr');
+function go(){if(h(inp.value||'')===CODE){try{localStorage.setItem(KEY,'1')}catch(e){}if(ov.parentNode)ov.parentNode.removeChild(ov);reveal();}else{err.textContent='密碼錯誤，請再試一次';inp.value='';inp.focus();}}
+btn.onclick=go;inp.addEventListener('keydown',function(e){if(e.key==='Enter')go();});inp.focus();}
+function start(){var ok=false;try{ok=localStorage.getItem(KEY)==='1'}catch(e){}if(ok){reveal();return;}build();}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();})();
+</script>
+<!--/NFZ_GATE-->
+</head><body>
 <header><h1>主題一 數與式　錯題回饋與弱點分析</h1><p class="sub">課後練習診斷 → 四層練習本加強　·　牛夫子數學教室</p></header>
 <div class="wrap"><div id="crumb" class="crumb"></div><div id="view"></div></div>
 <script>
